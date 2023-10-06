@@ -220,8 +220,7 @@ img{
 .secret-card:hover .card-inner{
     transform: rotateY(180deg);
 }
-.card-front,
-.card-back {
+.card-front{
   position: absolute;
   width: 100%;
   height: 100%;
@@ -232,6 +231,10 @@ img{
     font-size: 18px;
 }
 .card-back {
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     transform: rotateY(180deg);
   }
 .front-img{
@@ -249,4 +252,186 @@ img{
 }
 .card-back p{
     font-size: 16px;
+}
+.chef{
+    background: #3D1101;
+}
+.chef-content{
+    display: flex;
+    align-items: center;
+}
+.chef-content img{
+    margin-right: 25px;
+}
+.chef-text h2{
+    color: #EFE9E7;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+.chef-text h2 span{
+    font-size: 16px;
+}
+.chef-text p{
+    color: #EFE9E7;
+    padding-right: 16px;
+    font-size: 16px;
+}
+.feedback{
+    background: #EFE9E7;
+    padding: 50px 0;
+}
+.feedback h2{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.feedback-list{
+    display: flex;
+    justify-content: space-between;
+}
+.feedback-item{
+    width: 33.333%;
+    align-items: start;
+    display: flex;
+}
+.feedback-item img{
+    border-radius: 99rem;
+    margin-right: 12px;
+}
+.feedback-usersname{
+    padding: 20px 0;
+    font-size: 18px;
+}
+.feedback-comment{
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+.feedback-jobtitle{
+    font-size: 16px;
+    color: rgba(61,17,1,0.75);
+    text-align: right;
+}
+.position{
+    padding: 50px 0;
+    background: rgba(250,250,250,0.7);
+}
+.position h2{
+    font-size: 24px;
+    color: #3D1101;
+    text-align: center;
+    margin-bottom: 38px;
+}
+.position-content{
+    display: flex;
+    justify-content: space-between;
+}
+.position img{
+    margin-right: 20px;
+}
+.position-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 14px;
+}
+.position-item{
+    margin-bottom: 12px;
+}
+.position input{
+    margin-top: 6px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: inset 0px 1px 0px 0px #ECECEC;
+    border-radius: 3px;
+    padding:5px 15px;
+    width: 100%;
+}
+.position input[type="radio"]{
+    width: auto;
+    vertical-align: bottom;
+}
+.position input[type="radio"]{
+    margin-right: 36px;
+}
+.position .buttons{
+    margin-left: auto;
+}
+.position button{
+    padding: 6px 12px;
+    border: 1px solid transparent;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.position button:nth-child(1){
+    background: rgba(0,0,0,0.35);
+    margin-right: 10px;
+}
+.position button:nth-child(1):hover{
+    filter: drop-shadow(5px 2px 5px gray);
+}
+.position button:nth-child(2){
+    background: #F56C23;
+}
+.position button:nth-child(2):hover{
+    filter: drop-shadow(5px 2px 5px gray);
+}
+.footer{
+    background: #EFE9E7;
+}
+.footer-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+.footer-context{
+    display: flex;
+}
+.footer-about{
+    max-width: 299px;
+    margin-right: 20px;
+}
+.footer-context h4{
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.footer-context p{
+    font-size: 16px;
+}
+.footer-context li{
+    font-size: 16px;
+}
+.footer-link-logo{
+    background: url("./assets/logo_l.png") no-repeat;
+    width: 245px;
+    height: 50px;
+    display: block;
+    text-indent:101%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+.footer-linklist{
+    display: flex;
+    justify-content: end;
+}
+.footer-linklist a{
+    width: 35px;
+    height: 35px;
+    display: block;
+    text-indent:101%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-size: contain;
+    margin-left: 12px;
+}
+.google{
+    background: url("./assets/google-plus.png") no-repeat;
+}
+.twitter{
+    background: url("./assets/twitter.png") no-repeat;
+}
+.facebook{
+    background: url("./assets/facebook.png") no-repeat;
 }
