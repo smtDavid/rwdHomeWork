@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="all.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container d-flex jc-sb ai-center flex-wrap">
+            <h1>
+                <a href="./index.html">六角西餐廳</a>
+            </h1>
+            <input id="hamSelect" type="checkbox">
+            <label for="hamSelect" class="line">
+                <div class="hamSelect"></div>
+            </label>
+            <ul class="navbar d-flex">
+                <li>
+                    <a href="#">特色</a>
+                </li>
+                <li>
+                    <a href="#">主廚</a>
+                </li>
+                <li>
+                    <a href="#">地圖</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="banner">
+        <img class="img-pc" src="./assets/header_desktop@2x.png" alt="">
+        <img class="img-mobile" src="./assets/Bitmap.png" alt="">
+        <div class="banner-content">
+            <h3>咬一口就無法忘懷的漢堡</h3>
+            <p>七夕絕對無法錯過的好滋味
+                <br>六角大漢堡</p>
+        </div>
+    </div>
+    <div class="products">
+        <div class="container">
+            <div class="products-content">
+                <div class="category">
+                    <h2 class="category-title"><i class="fa-solid fa-leaf category-title-icon"></i>線上訂購美食</h2>
+                    <ul class="category-title-list">
+                        <li>
+                            <a href="#">全部(23)</a>
+                        </li>
+                        <li>
+                            <a href="#">只愛吃薯條(18)</a>
+                        </li>
+                        <li>
+                            <a href="#">加熱就可食(1)</a>
+                        </li>
+                        <li>
+                            <a href="#">不愛漢堡系列(4)</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="products-main">
+                    <div class="category-main-navbar">
+                        <div class="category-main-search">
+                            <label for="search">
+                                <input id="search" type="text" onclick="filterData()"><i class="fa-solid fa-magnifying-glass search-icon"></i>
+                            </label>
+                        </div>
+                        <div class="category-main-cart">
+                            <p>結帳去</p>
+                            <i class="fa-solid fa-cart-shopping category-main-cart-icon"><i class="category-main-cart-round">0</i></i>
+                        </div>
+                    </div>
+                    <ul class="category-main-items">
+                        <li class="category-main-items-card">
+                            <div class="category-main-items-card-top">
+                                <img src="./assets/product_1.png" alt="">
+                                <i class="fa-regular fa-heart card-top-icon"></i>
+                                <div class="ribbon-wrap">
+                                    <div class="ribbon">熱銷美食</div>
+                                </div>
+                            </div>
+                            <div class="category-main-items-card-body">
+                                <h3>經典漢堡套餐<br><span>Classic Hamburger Package</span></h3>
+                                <hr>
+                                <p>$120</p>
+                                <button type="button"><i class="fa-solid fa-cart-shopping"></i>加入購物車</button>
+                            </div>
+                        </li>
+                        <li class="category-main-items-card">
+                            <div class="category-main-items-card-top">
+                                <img src="./assets/product_2.png" alt="">
+                                <i class="fa-regular fa-heart card-top-icon"></i>
+                            </div>
+                            <div class="category-main-items-card-body">
+                                <h3>英俊香腸<br><span>Handsome Sausage</span></h3>
+                                <hr>
+                                <p>$1,024</p>
+                                <button type="button"><i class="fa-solid fa-cart-shopping"></i>加入購物車</button>
+                            </div>
+                        </li>
+                        <li class="category-main-items-card">
+                            <div class="category-main-items-card-top">
+                                <img src="./assets/product_3.png" alt="">
+                                <i class="fa-regular fa-heart card-top-icon"></i>
+                            </div>
+                            <div class="category-main-items-card-body">
+                                <h3>漢堡兄弟<br><span>Hamburg Brothers</span></h3>
+                                <hr>
+                                <p>$792</p>
+                                <button type="button"><i class="fa-solid fa-cart-shopping"></i>加入購物車</button>
+                            </div>
+                        </li>
+                        <li class="category-main-items-card">
+                            <div class="category-main-items-card-top">
+                                <img src="./assets/product_4.png" alt="">
+                                <i class="fa-regular fa-heart card-top-icon"></i>
+                            </div>
+                            <div class="category-main-items-card-body">
+                                <h3>完美願望<br><span>Dragon Ball Package</span></h3>
+                                <hr>
+                                <p>$999,999</p>
+                                <button type="button"><i class="fa-solid fa-cart-shopping"></i>加入購物車</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer-item">
+                <div class="footer-context">
+                    <div class="footer-about">
+                        <h4>關於 六角西餐廳</h4>
+                        <p>Curabitur lobortis id lorem id bibndum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. </p>
+                    </div>
+                    <div class="footer-connection">
+                        <h4>聯絡方式</h4>
+                        <ul>
+                            <li>
+                                •	高雄市中正五路到底
+                            </li>
+                            <li>
+                                •	+886 886 886
+                            </li>
+                            <li>
+                                •	service@hexschool.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-link">
+                    <a href="#" class="footer-link-logo">六角西餐廳</a>
+                    <div class="footer-linklist">
+                        <a href="#" class="google">google</a>
+                        <a href="#" class="twitter">twitter</a>
+                        <a href="#" class="facebook">facebook</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+<script src="./menu.js"></script>
+</html>
